@@ -5,17 +5,11 @@ import { User } from './User';
 import { Main } from './Main';
 
 class App extends React.Component {
-    constructor() {
-        super();
-    }
-
-    changeUsername(newName) {
-    }
-
+  
     render() {
         return (
             <div className="container">
-                <Main changeUsername={this.changeUsername.bind(this)}/>
+                <Main changeUsername={() => this.props.setName("Shurikit")}/>
                 <User username={this.props.user.name}/>
             </div>
         );
