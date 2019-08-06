@@ -7,7 +7,6 @@ import { Main } from './Main';
 class App extends React.Component {
     constructor() {
         super();
-        
     }
 
     changeUsername(newName) {
